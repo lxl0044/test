@@ -1,0 +1,10 @@
+server:
+  port: 10002
+
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry:
+          address: zookeeper://10.1.13.199:2181/xiao
+        boltPort: 12205

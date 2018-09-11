@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Log4j 2.x 配置文件。每30秒自动检查和应用配置文件的更新； -->
+<configuration status="info" monitorInterval="30" strict="true" schema="Log4J-V2.2.xsd">
+
+    <Properties>
+        <Property name="LOG_DIR">/data/logs/test</Property>
+        <Property name="LOG_NAME">test-sofa-client.log</Property>
+        <Property name="SOFA_LOG_NAME">test-sofa-client-sofa.log</Property>
+    </Properties>
+
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss,SSS} %X{traceId} %t %c:%L - %m%n"/>
+        </Console>
+
+        <RollingFile name="RollingFile" fileName="${LOG_DIR}/${LOG_NAME}"
+                     filePattern="${LOG_DIR}/${LOG_NAME}.%d{yyyyMMdd}">
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss,SSS} %X{traceId} %t %c:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="RollingFile2" fileName="${LOG_DIR}/${SOFA_LOG_NAME}"
+                     filePattern="${LOG_DIR}/${SOFA_LOG_NAME}.%d{yyyyMMdd}">
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss,SSS} %X{traceId} %t %c:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Policies>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <!-- 全局配置 -->
+        <root level="info">
+            <appender-ref ref="RollingFile"/>
+        </root>
+    </loggers>
+</configuration>

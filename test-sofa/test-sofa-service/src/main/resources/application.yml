@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: alpha
+  application:
+    name: test-sofa-service
