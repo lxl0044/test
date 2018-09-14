@@ -1,0 +1,35 @@
+2018-09-14 09:23:13,075 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.4.5_20180829115038, PID is:32318
+2018-09-14 09:23:13,095 INFO  main                             - Install Module: fault-tolerance
+2018-09-14 09:23:13,113 INFO  main                             - Install Module: sofaTracer-resteasy
+2018-09-14 09:23:13,189 INFO  main                             - The module lookout does not need to be loaded.
+2018-09-14 09:23:13,190 INFO  main                             - Install Module: sofaTracer
+2018-09-14 09:23:13,212 INFO  main                             - Export provider config : com.xiao.test.api.SofaApi::bolt with bean id rpc-cfg-0
+2018-09-14 09:23:16,965 INFO  main                             - service published.  interfaceId[com.xiao.test.api.SofaApi]; protocol[bolt]
+2018-09-14 09:23:27,052 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.4.5_20180829115038, PID is:32382
+2018-09-14 09:23:27,076 INFO  main                             - Install Module: fault-tolerance
+2018-09-14 09:23:27,090 INFO  main                             - Install Module: sofaTracer-resteasy
+2018-09-14 09:23:27,154 INFO  main                             - The module lookout does not need to be loaded.
+2018-09-14 09:23:27,155 INFO  main                             - Install Module: sofaTracer
+2018-09-14 09:23:27,245 INFO  main                             - Refer consumer config : bolt://com.xiao.test.api.SofaApi: with bean id rpc-cfg-0
+2018-09-14 09:23:37,076 INFO  http-nio-10001-exec-1            - Load tracer impl success: sofaTracer, com.alipay.sofa.rpc.tracer.sofatracer.RpcSofaTracer@eef01df
+2018-09-14 09:23:37,220 INFO  SOFA-SEV-BOLT-BIZ-12205-3-T1     - Load tracer impl success: sofaTracer, com.alipay.sofa.rpc.tracer.sofatracer.RpcSofaTracer@782a0419
+2018-09-14 09:24:30,047 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.4.5_20180829115038, PID is:32634
+2018-09-14 09:24:30,076 INFO  main                             - Install Module: fault-tolerance
+2018-09-14 09:24:30,100 INFO  main                             - Install Module: sofaTracer-resteasy
+2018-09-14 09:24:30,180 INFO  main                             - The module lookout does not need to be loaded.
+2018-09-14 09:24:30,181 INFO  main                             - Install Module: sofaTracer
+2018-09-14 09:24:30,198 INFO  main                             - Export provider config : com.xiao.test.api.SofaApi::bolt with bean id rpc-cfg-0
+2018-09-14 09:24:33,674 INFO  SOFA-SEV-BOLT-BIZ-12205-3-T1     - Load tracer impl success: sofaTracer, com.alipay.sofa.rpc.tracer.sofatracer.RpcSofaTracer@584486de
+2018-09-14 09:24:33,915 INFO  main                             - service published.  interfaceId[com.xiao.test.api.SofaApi]; protocol[bolt]
+2018-09-14 09:27:49,728 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework catch JVM shutdown event, Run shutdown hook now.
+2018-09-14 09:27:49,731 INFO  SOFA-RPC-ShutdownHook            - UnRefer consumer config : bolt://com.xiao.test.api.SofaApi: with bean id rpc-cfg-0
+2018-09-14 09:27:49,977 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: fault-tolerance
+2018-09-14 09:27:49,977 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer-resteasy
+2018-09-14 09:27:49,977 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer
+2018-09-14 09:27:49,977 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework has been release all resources ...
+2018-09-14 09:27:51,113 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework catch JVM shutdown event, Run shutdown hook now.
+2018-09-14 09:27:51,114 INFO  Thread-5                         - Unexport provider config : com.xiao.test.api.SofaApi::bolt with bean id rpc-cfg-0
+2018-09-14 09:27:51,338 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: fault-tolerance
+2018-09-14 09:27:51,338 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer-resteasy
+2018-09-14 09:27:51,338 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer
+2018-09-14 09:27:51,339 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework has been release all resources ...

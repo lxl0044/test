@@ -1,0 +1,4 @@
+2018-09-14 09:24:52,428 INFO  Curator-PathChildrenCache-2      com.alipay.sofa.rpc.transport.bolt.BoltClientTransport - Try disconnect client transport now. The connection is 10.200.101.197:45510 -> 10.200.101.197:12205.
+2018-09-14 09:27:49,972 INFO  SOFA-RPC-ShutdownHook            com.alipay.sofa.rpc.transport.ClientTransportFactory - Shutdown all client transport now!
+2018-09-14 09:27:49,975 INFO  SOFA-RPC-ShutdownHook            com.alipay.sofa.rpc.transport.bolt.BoltClientTransport - Try disconnect client transport now. The connection is 10.200.101.197:45510 -> 10.200.101.197:12205.
+2018-09-14 09:27:51,338 INFO  SOFA-RPC-ShutdownHook            com.alipay.sofa.rpc.transport.ClientTransportFactory - Shutdown all client transport now!
